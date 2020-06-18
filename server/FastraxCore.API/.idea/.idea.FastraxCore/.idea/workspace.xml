@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4c209f7b-e47b-42ab-bd48-45d09c074aa3" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Global</find>
+      <find>r =&gt; r</find>
+      <find>amc =&gt; amc</find>
+      <find>r =&gt; r.</find>
+      <find>include</find>
+      <find>including</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>amd =&gt; amd.</replace>
+      <replace>amc =&gt; amc.</replace>
+      <replace>amd =&gt; amd</replace>
+    </replaceStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/IBaseRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/Modules/IAccessModuleDefaultRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Migrations/MDbContextModelSnapshot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/Settings/Modules/AccessModuleDefaultRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/IDepartmentRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/Settings/Modules/AccessModuleCustomRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/Modules/IAccessModuleRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/Modules/IAccessModuleCustomRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/IUserRoleRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GraphQL/DTOs/CreateDepartment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GraphQL/DTOs/CreateDesignation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GraphQL/DTOs/CreateRole.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GraphQL/Types/RoleType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GraphQL/Query/UserQuery.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GraphQL/Mutations/UserMutation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GraphQL/Types/UserType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GraphQL/Types/AccesModuleDefaultType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Helpers/Extensions/ServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Context/MDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GraphQL/Types/AccessModuleType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/Settings/Modules/AccessModuleRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/BaseRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/Settings/DepartmentRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Identity/UserConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Identity/DepartmentConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Modules/AccessModuleConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Domain/Entities/Settings/Modules/AccessModuleDefault.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Domain/Entities/Settings/Modules/AccessModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Modules/AccessModuleCustomConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Modules/AccessModuleDefaultConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Domain/Entities/Settings/Modules/AccessModuleCustom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Domain/Entities/Settings/Identity/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FastraxCore.Domain/Entities/Settings/Identity/Role.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GraphQL/Types/AccessModuleCustomType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GraphQL/DTOs/AccessModuleDTO.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/Modules/IAccessModule.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/Settings/Modules/AccessModuleRepository.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Modules/AccessModuleConfig.cs" />
+        <option value="$PROJECT_DIR$/GraphQL/Types/UserType.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Modules/AccessModuleCustom.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Modules/AccessModuleCustomConfig.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Domain/Entities/Settings/Modules/AccessModuleCustom.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Domain/Entities/Settings/Modules/AccessModuleDefault.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Infrastructure/Context/MDbContext.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/Modules/IAccessModuleDefaultRepository.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/Modules/IAccessModuleRepository.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/Settings/Modules/AccessModuleDefaultRepository.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/Modules/IAccessModuleCustomRepository.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/Settings/Modules/AccessModuleCustomRepository.cs" />
+        <option value="$PROJECT_DIR$/Helpers/Extensions/ServiceCollectionExtensions.cs" />
+        <option value="$PROJECT_DIR$/GraphQL/DTOs/AccessModuleDTO.cs" />
+        <option value="$PROJECT_DIR$/GraphQL/Types/AccessModuleType.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/IBaseRepository.cs" />
+        <option value="$PROJECT_DIR$/GraphQL/Types/AccessModuleDTOType.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/BaseRepository.cs" />
+        <option value="$PROJECT_DIR$/GraphQL/Types/AccessModuleCustomType.cs" />
+        <option value="$PROJECT_DIR$/GraphQL/Types/AccesModuleDefaultType.cs" />
+        <option value="$PROJECT_DIR$/GraphQL/Query/UserQuery.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Domain/Entities/Settings/Modules/AccessModule.cs" />
+        <option value="$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Modules/AccessModuleDefaultConfig.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="2560" />
+    <option name="height" value="1337" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.API" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.API" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GraphQL" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.API" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GraphQL" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="DTOs" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.API" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GraphQL" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Mutations" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.API" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GraphQL" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Query" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.API" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="GraphQL" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Types" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.API" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Helpers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.API" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Helpers" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Extensions" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.Domain" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.Domain" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Entities" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.Domain" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Interfaces" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.Domain" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Interfaces" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Repositories" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.Domain" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Interfaces" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Repositories" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Settings" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.Domain" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Interfaces" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Repositories" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Settings" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Modules" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Configurations" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Configurations" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Settings" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Configurations" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Settings" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Modules" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Repositories" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Repositories" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Settings" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="FastraxCore" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="FastraxCore.Infrastructure" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Repositories" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Settings" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Modules" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="RiderAspLiveTemplatesSettingsId" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.FastraxCore.AP">
+    <configuration name="FastraxCore.AP" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/FastraxCore.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="FastraxCore.API" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FastraxCore.API: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/FastraxCore.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c209f7b-e47b-42ab-bd48-45d09c074aa3" name="Default Changelist" comment="" />
+      <created>1592380755696</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592380755696</updated>
+      <workItem from="1592380756937" duration="1975000" />
+      <workItem from="1592383879162" duration="642000" />
+      <workItem from="1592384524103" duration="17928000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="20545000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19340746" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32931727" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32931727" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="REST Client" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.32931727" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="16" weight="0.32931727" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" weight="0.13065925" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32962668" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/GraphQL/DTOs/CreateDepartment.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <marker date="1592380531632" expanded="true" signature="6:96" ph="..." />
+            <marker date="1592380531632" expanded="true" signature="136:276" ph="{...}" />
+            <marker date="1592380531632" expanded="true" signature="172:274" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphQL/DTOs/CreateDesignation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <marker date="1592380476675" expanded="true" signature="6:96" ph="..." />
+            <marker date="1592380476675" expanded="true" signature="136:277" ph="{...}" />
+            <marker date="1592380476675" expanded="true" signature="173:275" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphQL/DTOs/CreateRole.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <marker date="1592380483942" expanded="true" signature="6:96" ph="..." />
+            <marker date="1592380483942" expanded="true" signature="136:225" ph="{...}" />
+            <marker date="1592380483942" expanded="true" signature="166:223" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/FastraxCore.Infrastructure.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/IUserRoleRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <marker date="1592380236467" expanded="false" signature="6:66" ph="..." />
+            <marker date="1592380236467" expanded="true" signature="129:179" ph="{...}" />
+            <marker date="1592380236467" expanded="true" signature="165:177" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Identity/DepartmentConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="5" selection-start-line="9" selection-start-column="34" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <marker date="1592380253799" expanded="true" signature="6:211" ph="..." />
+            <marker date="1592380253799" expanded="true" signature="273:668" ph="{...}" />
+            <marker date="1592380253799" expanded="true" signature="348:666" ph="{...}" />
+            <marker date="1592380253799" expanded="true" signature="423:660" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Identity/UserConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" selection-start-line="23" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <marker date="1592380253810" expanded="false" signature="6:211" ph="..." />
+            <marker date="1592380253810" expanded="true" signature="264:1469" ph="{...}" />
+            <marker date="1592380253810" expanded="true" signature="320:1467" ph="{...}" />
+            <marker date="1592380253810" expanded="true" signature="389:1461" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Properties/launchSettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <marker date="1592380409352" expanded="false" signature="6:246" ph="..." />
+            <marker date="1592380409352" expanded="true" signature="273:696" ph="{...}" />
+            <marker date="1592380409352" expanded="true" signature="300:694" ph="{...}" />
+            <marker date="1592380409352" expanded="true" signature="353:424" ph="{...}" />
+            <marker date="1592380409352" expanded="true" signature="613:686" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FastraxCore.API.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="48" lean-forward="true" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <marker date="1592380455311" expanded="false" signature="6:471" ph="..." />
+            <marker date="1592380455311" expanded="true" signature="498:1908" ph="{...}" />
+            <marker date="1592380455311" expanded="true" signature="525:1906" ph="{...}" />
+            <marker date="1592380455311" expanded="true" signature="584:647" ph="{...}" />
+            <marker date="1592380455311" expanded="true" signature="870:1268" ph="{...}" />
+            <marker date="1592380455311" expanded="true" signature="1456:1900" ph="{...}" />
+            <marker date="1592380455311" expanded="true" signature="1503:1619" ph="{...}" />
+            <marker date="1592380455311" expanded="true" signature="1747:1888" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Migrations/MDbContextModelSnapshot.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <marker date="1592397044153" expanded="false" signature="28:273" ph="..." />
+            <marker date="1592397044153" expanded="true" signature="322:12161" ph="{...}" />
+            <marker date="1592397044153" expanded="true" signature="418:12159" ph="{...}" />
+            <marker date="1592397044153" expanded="true" signature="494:12153" ph="{...}" />
+            <marker date="1592397044153" expanded="true" signature="916:1713" ph="{...}" />
+            <marker date="1592397044153" expanded="true" signature="1830:2465" ph="{...}" />
+            <marker date="1592397044153" expanded="true" signature="2583:3219" ph="{...}" />
+            <marker date="1592397044153" expanded="true" signature="3330:3845" ph="{...}" />
+            <marker date="1592397044153" expanded="true" signature="3956:5966" ph="{...}" />
+            <marker date="1592397044153" expanded="true" signature="6081:6732" ph="{...}" />
+            <marker date="1592397044153" expanded="true" signature="6745:6978" ph="{...}" />
+            <marker date="1592397044153" expanded="true" signature="7089:7696" ph="{...}" />
+            <marker date="1592397044153" expanded="true" signature="12050:12108" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphQL/Mutations/UserMutation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <marker date="1592380527638" expanded="true" signature="6:244" ph="..." />
+            <marker date="1592380527638" expanded="true" signature="289:3411" ph="{...}" />
+            <marker date="1592380527638" expanded="true" signature="321:3409" ph="{...}" />
+            <marker date="1592380527638" expanded="true" signature="804:1034" ph="{...}" />
+            <marker date="1592380527638" expanded="true" signature="1153:1390" ph="{...}" />
+            <marker date="1592380527638" expanded="true" signature="1213:1269" ph="{...}" />
+            <marker date="1592380527638" expanded="true" signature="1439:1895" ph="{...}" />
+            <marker date="1592380527638" expanded="true" signature="1499:1774" ph="{...}" />
+            <marker date="1592380527638" expanded="true" signature="1968:2295" ph="{...}" />
+            <marker date="1592380527638" expanded="true" signature="2040:2150" ph="{...}" />
+            <marker date="1592380527638" expanded="true" signature="2373:2637" ph="{...}" />
+            <marker date="1592380527638" expanded="true" signature="2714:3049" ph="{...}" />
+            <marker date="1592380527638" expanded="true" signature="2788:2900" ph="{...}" />
+            <marker date="1592380527638" expanded="true" signature="3131:3402" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/IDepartmentRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <marker date="1592380236461" expanded="false" signature="6:119" ph="..." />
+            <marker date="1592380236461" expanded="true" signature="182:271" ph="{...}" />
+            <marker date="1592380236461" expanded="true" signature="257:269" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/Settings/DepartmentRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <marker date="1592380253821" expanded="false" signature="6:220" ph="..." />
+            <marker date="1592380253821" expanded="true" signature="280:556" ph="{...}" />
+            <marker date="1592380253821" expanded="true" signature="372:554" ph="{...}" />
+            <marker date="1592380253821" expanded="true" signature="496:548" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Domain/Entities/Settings/Identity/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <marker date="1592380236449" expanded="false" signature="6:138" ph="..." />
+            <marker date="1592380236449" expanded="true" signature="195:1282" ph="{...}" />
+            <marker date="1592380236449" expanded="true" signature="219:1280" ph="{...}" />
+            <marker date="1592380236449" expanded="true" signature="534:724" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Domain/Entities/Settings/Identity/Role.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <marker date="1592380236448" expanded="false" signature="6:66" ph="..." />
+            <marker date="1592380236448" expanded="true" signature="123:242" ph="{...}" />
+            <marker date="1592380236448" expanded="true" signature="147:240" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Context/MDbContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <marker date="1592394014965" expanded="false" signature="6:311" ph="..." />
+            <marker date="1592394014965" expanded="true" signature="357:1051" ph="{...}" />
+            <marker date="1592394014965" expanded="true" signature="399:1049" ph="{...}" />
+            <marker date="1592394014965" expanded="true" signature="485:505" ph="{...}" />
+            <marker date="1592394014965" expanded="true" signature="581:1043" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/Settings/Modules/AccessModuleCustomRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding>
+            <marker date="1592394883696" expanded="true" signature="6:197" ph="..." />
+            <marker date="1592394883696" expanded="true" signature="265:573" ph="{...}" />
+            <marker date="1592394883696" expanded="true" signature="381:571" ph="{...}" />
+            <marker date="1592394883696" expanded="true" signature="513:565" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/Settings/Modules/AccessModuleRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+          <folding>
+            <marker date="1592384972221" expanded="true" signature="6:152" ph="..." />
+            <marker date="1592384972221" expanded="true" signature="220:504" ph="{...}" />
+            <marker date="1592384972221" expanded="true" signature="318:502" ph="{...}" />
+            <marker date="1592384972221" expanded="true" signature="444:496" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphQL/DTOs/AccessModuleDTO.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding>
+            <marker date="1592395903927" expanded="true" signature="38:282" ph="{...}" />
+            <marker date="1592395903927" expanded="true" signature="73:280" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Domain/Entities/Settings/Modules/AccessModuleCustom.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <marker date="1592393567256" expanded="false" signature="6:119" ph="..." />
+            <marker date="1592393567256" expanded="true" signature="175:595" ph="{...}" />
+            <marker date="1592393567256" expanded="true" signature="213:593" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Domain/Entities/Settings/Modules/AccessModuleDefault.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <marker date="1592393578109" expanded="false" signature="6:119" ph="..." />
+            <marker date="1592393578109" expanded="true" signature="175:508" ph="{...}" />
+            <marker date="1592393578109" expanded="true" signature="214:506" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/Modules/IAccessModuleCustomRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-end-line="3" selection-end-column="1" />
+          <folding>
+            <marker date="1592394823696" expanded="true" signature="122:236" ph="{...}" />
+            <marker date="1592394823696" expanded="true" signature="213:234" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/Modules/IAccessModuleRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding>
+            <marker date="1592384920950" expanded="true" signature="114:216" ph="{...}" />
+            <marker date="1592384920950" expanded="true" signature="193:214" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Modules/AccessModuleCustomConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+          <folding>
+            <marker date="1592393516842" expanded="true" signature="6:143" ph="..." />
+            <marker date="1592393516842" expanded="true" signature="213:1284" ph="{...}" />
+            <marker date="1592393516842" expanded="true" signature="303:1282" ph="{...}" />
+            <marker date="1592393516842" expanded="true" signature="386:1276" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphQL/Types/UserType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="14" selection-end-column="56" />
+          <folding>
+            <marker date="1592385865424" expanded="false" signature="6:234" ph="..." />
+            <marker date="1592385865424" expanded="true" signature="275:932" ph="{...}" />
+            <marker date="1592385865424" expanded="true" signature="322:930" ph="{...}" />
+            <marker date="1592385865424" expanded="true" signature="410:924" ph="{...}" />
+            <marker date="1592385865424" expanded="true" signature="544:914" ph="/* descriptor.Field(x =&gt; x.Department).Resolver( ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphQL/Types/RoleType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <marker date="1592380560240" expanded="false" signature="6:219" ph="..." />
+            <marker date="1592380560240" expanded="true" signature="260:546" ph="{...}" />
+            <marker date="1592380560240" expanded="true" signature="307:544" ph="{...}" />
+            <marker date="1592380560240" expanded="true" signature="395:538" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/Settings/Modules/AccessModuleDefaultRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <marker date="1592394736805" expanded="true" signature="6:160" ph="..." />
+            <marker date="1592394736805" expanded="true" signature="228:539" ph="{...}" />
+            <marker date="1592394736805" expanded="true" signature="346:537" ph="{...}" />
+            <marker date="1592394736805" expanded="true" signature="479:531" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphQL/Types/AccessModuleDTOType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Modules/AccessModuleConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding>
+            <marker date="1592385620491" expanded="true" signature="6:135" ph="..." />
+            <marker date="1592385620491" expanded="true" signature="205:783" ph="{...}" />
+            <marker date="1592385620491" expanded="true" signature="283:781" ph="{...}" />
+            <marker date="1592385620491" expanded="true" signature="360:775" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/IBaseRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <marker date="1592398347560" expanded="false" signature="6:146" ph="..." />
+            <marker date="1592398347560" expanded="true" signature="200:2038" ph="{...}" />
+            <marker date="1592398347560" expanded="true" signature="265:2036" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Domain/Interfaces/Repositories/Settings/Modules/IAccessModuleDefaultRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="89" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="89" />
+          <folding>
+            <marker date="1592394686783" expanded="true" signature="122:238" ph="{...}" />
+            <marker date="1592394686783" expanded="true" signature="215:236" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Helpers/Extensions/ServiceCollectionExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="45" column="95" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="95" />
+          <folding>
+            <marker date="1592394967591" expanded="false" signature="6:736" ph="..." />
+            <marker date="1592394967591" expanded="true" signature="782:4357" ph="{...}" />
+            <marker date="1592394967591" expanded="true" signature="814:855" ph="{...}" />
+            <marker date="1592394967591" expanded="true" signature="908:4355" ph="{...}" />
+            <marker date="1592394967591" expanded="true" signature="923:1082" ph="/// Applies collection of DI services  ... " />
+            <marker date="1592394967591" expanded="true" signature="1171:2046" ph="{...}" />
+            <marker date="1592394967591" expanded="true" signature="2056:2211" ph="/// Applies GraphQL Implementation ... " />
+            <marker date="1592394967591" expanded="true" signature="2306:3460" ph="{...}" />
+            <marker date="1592394967591" expanded="true" signature="3470:3796" ph="/// Defines your MDBContext Connection String ... " />
+            <marker date="1592394967591" expanded="true" signature="3963:4348" ph="{...}" />
+            <marker date="1592394967591" expanded="true" signature="4178:4306" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Repositories/BaseRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <marker date="1592399161776" expanded="false" signature="6:327" ph="..." />
+            <marker date="1592399161776" expanded="true" signature="378:4733" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="459:4731" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="686:740" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="795:864" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="964:1198" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="1309:1378" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="1448:1517" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="1625:1694" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="1780:1849" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="1879:1935" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="1964:2033" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="2071:2214" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="2272:2341" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="2377:2446" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="2502:2571" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="2690:2759" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="2834:2909" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="2995:3064" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="3103:3175" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="3232:3310" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="3347:3416" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="3481:3565" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="3686:3755" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="3852:3921" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="3969:4038" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="4069:4138" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="4213:4282" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="4340:4409" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="4482:4551" ph="{...}" />
+            <marker date="1592399161776" expanded="true" signature="4656:4725" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphQL/Types/AccessModuleCustomType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <marker date="1592401272068" expanded="true" signature="6:256" ph="..." />
+            <marker date="1592401272068" expanded="true" signature="297:1327" ph="{...}" />
+            <marker date="1592401272068" expanded="true" signature="372:1325" ph="{...}" />
+            <marker date="1592401272068" expanded="true" signature="474:1319" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphQL/Query/UserQuery.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+          <folding>
+            <marker date="1592402030152" expanded="true" signature="6:440" ph="..." />
+            <marker date="1592402030152" expanded="true" signature="481:5528" ph="{...}" />
+            <marker date="1592402030152" expanded="true" signature="510:5526" ph="{...}" />
+            <marker date="1592402030152" expanded="true" signature="1460:1902" ph="{...}" />
+            <marker date="1592402030152" expanded="true" signature="1912:2026" ph="/// Gets collection of Access Modules ... " />
+            <marker date="1592402030152" expanded="true" signature="2141:2268" ph="/// Gets only root Access Module and it's children ... " />
+            <marker date="1592402030152" expanded="true" signature="2473:2578" ph="/// Gets collection of Users ... " />
+            <marker date="1592402030152" expanded="true" signature="2669:2774" ph="/// Gets collection of Roles ... " />
+            <marker date="1592402030152" expanded="true" signature="2865:2976" ph="/// Gets collection of Departments ... " />
+            <marker date="1592402030152" expanded="true" signature="3085:3197" ph="/// Gets collection of Designations ... " />
+            <marker date="1592402030152" expanded="true" signature="3317:3439" ph="/// Gets collection of Default Access Modules ... " />
+            <marker date="1592402030152" expanded="true" signature="3564:3806" ph="/// Gets all the User Access Modules based on his roleId and userId ... " />
+            <marker date="1592402030152" expanded="true" signature="3893:5269" ph="{...}" />
+            <marker date="1592402030152" expanded="true" signature="4204:4461" ph="{...}" />
+            <marker date="1592402030152" expanded="true" signature="4795:5053" ph="{...}" />
+            <marker date="1592402030152" expanded="true" signature="5287:5408" ph="/// Gets collection of Custom Access Modules ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphQL/Types/AccessModuleType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
+          <folding>
+            <marker date="1592397796117" expanded="true" signature="6:136" ph="..." />
+            <marker date="1592397796117" expanded="true" signature="177:703" ph="{...}" />
+            <marker date="1592397796117" expanded="true" signature="245:701" ph="{...}" />
+            <marker date="1592397796117" expanded="true" signature="341:695" ph="{...}" />
+            <marker date="1592397796117" expanded="true" signature="490:685" ph="/* descriptor.Field(x =&gt; x.Children).Resolver( ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Domain/Entities/Settings/Modules/AccessModule.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+          <folding>
+            <marker date="1592402377009" expanded="false" signature="6:118" ph="..." />
+            <marker date="1592402377009" expanded="true" signature="166:538" ph="{...}" />
+            <marker date="1592402377009" expanded="true" signature="198:536" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphQL/Types/AccesModuleDefaultType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <marker date="1592401890156" expanded="true" signature="6:188" ph="..." />
+            <marker date="1592401890156" expanded="true" signature="229:832" ph="{...}" />
+            <marker date="1592401890156" expanded="true" signature="306:830" ph="{...}" />
+            <marker date="1592401890156" expanded="true" signature="409:824" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FastraxCore.Infrastructure/Configurations/Settings/Modules/AccessModuleDefaultConfig.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+          <folding>
+            <marker date="1592402386740" expanded="true" signature="6:143" ph="..." />
+            <marker date="1592402386740" expanded="true" signature="213:1095" ph="{...}" />
+            <marker date="1592402386740" expanded="true" signature="306:1093" ph="{...}" />
+            <marker date="1592402386740" expanded="true" signature="390:1087" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

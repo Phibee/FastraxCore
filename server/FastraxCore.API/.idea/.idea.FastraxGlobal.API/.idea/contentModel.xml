@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$/../FastraxCore.API" t="IncludeRecursive">
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.json" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="FastraxCore.API.csproj" t="IncludeRecursive" />
+      <e p="GraphQL" t="Include">
+        <e p="DTOs" t="Include">
+          <e p="CreateDepartment.cs" t="Include" />
+          <e p="CreateDesignation.cs" t="Include" />
+          <e p="CreateRole.cs" t="Include" />
+          <e p="CreateUser.cs" t="Include" />
+          <e p="DeleteDepartmentInput.cs" t="Include" />
+          <e p="DeleteDesignationInput.cs" t="Include" />
+        </e>
+        <e p="Mutations" t="Include">
+          <e p="UserMutation.cs" t="Include" />
+        </e>
+        <e p="Query" t="Include">
+          <e p="UserQuery.cs" t="Include" />
+        </e>
+        <e p="Types" t="Include">
+          <e p="RoleType.cs" t="Include" />
+          <e p="UserType.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Helpers" t="Include">
+        <e p="Extensions" t="Include">
+          <e p="ServiceCollectionExtensions.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="FastraxCore.API.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="Startup.cs" t="Include" />
+    </e>
+    <e p="$PROJECT_DIR$/../FastraxCore.Domain" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Entities" t="Include">
+        <e p="Episode.cs" t="Include" />
+        <e p="Program" t="Include" />
+        <e p="Settings" t="Include">
+          <e p="Identity" t="Include">
+            <e p="Department.cs" t="Include" />
+            <e p="Designation.cs" t="Include" />
+            <e p="Role.cs" t="Include" />
+            <e p="User.cs" t="Include" />
+            <e p="UserRole.cs" t="Include" />
+          </e>
+          <e p="Modules" t="Include">
+            <e p="AccessModule.cs" t="Include" />
+            <e p="AccessModuleCustom.cs" t="Include" />
+            <e p="AccessModuleDefault.cs" t="Include" />
+            <e p="Action.cs" t="Include" />
+            <e p="ActionCustom.cs" t="Include" />
+            <e p="ActionDefault.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="FastraxCore.Domain.csproj" t="IncludeRecursive" />
+      <e p="Interfaces" t="Include">
+        <e p="Repositories" t="Include">
+          <e p="IBaseRepository.cs" t="Include" />
+          <e p="IEpisodeRepository.cs" t="Include" />
+          <e p="Settings" t="Include">
+            <e p="IDepartmentRepository.cs" t="Include" />
+            <e p="IDesignationRepository.cs" t="Include" />
+            <e p="IRoleRepository.cs" t="Include" />
+            <e p="IUserRepository.cs" t="Include" />
+            <e p="IUserRoleRepository.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="IEncryptionService.cs" t="Include" />
+          <e p="IMembershipService.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="FastraxCore.Domain.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Services" t="Include">
+        <e p="EncryptionService.cs" t="Include" />
+        <e p="MembershipService.cs" t="Include" />
+      </e>
+    </e>
+    <e p="$PROJECT_DIR$/../FastraxCore.Infrastructure" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Configurations" t="Include">
+        <e p="Identity" t="Include">
+          <e p="DepartmentConfig.cs" t="Include" />
+          <e p="DesignationConfig.cs" t="Include" />
+          <e p="RoleConfig.cs" t="Include" />
+          <e p="UserConfig.cs" t="Include" />
+          <e p="UserRoleConfig.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Context" t="Include">
+        <e p="MDbContext.cs" t="Include" />
+      </e>
+      <e p="FastraxCore.Infrastructure.csproj" t="IncludeRecursive" />
+      <e p="Migrations" t="Include">
+        <e p="20200617052946_InitialMigration.cs" t="Include" />
+        <e p="20200617052946_InitialMigration.Designer.cs" t="Include" />
+        <e p="MDbContextModelSnapshot.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="FastraxCore.Infrastructure.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Repositories" t="Include">
+        <e p="BaseRepository.cs" t="Include" />
+        <e p="Settings" t="Include">
+          <e p="DepartmentRepository.cs" t="Include" />
+          <e p="DesignationRepository.cs" t="Include" />
+          <e p="RoleRepository.cs" t="Include" />
+          <e p="UserRepository.cs" t="Include" />
+        </e>
+      </e>
+    </e>
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="FastraxGlobal.API.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.1/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_FastraxGlobal.API.945719492.00" t="ExcludeRecursive" />
+  </component>
+</project>
