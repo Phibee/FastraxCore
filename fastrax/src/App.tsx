@@ -3,8 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import './sass/variables.scss';
 
-import ImageResources from './assets/index';
 import Layout from './components/layout';
+import { BannerHeader } from './components/common';
 
 const ContentSidebar: React.FC = () => (
      <div>
@@ -12,9 +12,16 @@ const ContentSidebar: React.FC = () => (
      </div>
 );
 
+const ContentBanner: React.FC = () => (
+     <BannerHeader
+          title="Dashboard"
+          subTitle="Shows graphical representation of records"
+     />
+);
+
 function App() {
      return (
-          <Layout>
+          <Layout contentSideBar={ContentSidebar} contentBanner={ContentBanner}>
                <div>Content Here...</div>
           </Layout>
      );

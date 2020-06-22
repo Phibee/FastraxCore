@@ -8,7 +8,8 @@ interface IProps {
 
 const AsideLayout = styled.aside<IProps>`
      height: 100vh;
-     width: ${(props) => (props.width ? props.width + 'px' : '320px')};
+     width: ${(props) => (props.width ? props.width + 'px' : '20%')};
+     max-width: 300px;
      order: ${(props) => (props.position === 'right' ? 1 : 0)};
      display: inline-flex;
      flex-direction: column;

@@ -1,12 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-interface IProps {}
+interface IProps {
+     isBannerVisible?: true | false;
+}
 
 const ContentSidebaTopStyled = styled.div<IProps>`
      background: white;
      min-height: 100%;
-     border-top-left-radius: 25px;
+     ${(props) =>
+          props.isBannerVisible ? 'border-top-left-radius: 25px' : ''};
      padding-top: 10px;
      padding-left: 15px;
 `;
@@ -19,7 +22,9 @@ const ContentSidebarStyled = styled.div<IProps>`
 export const Index: React.FC<IProps> = (props) => {
      return (
           <ContentSidebarStyled {...props}>
-               <ContentSidebaTopStyled>{props.children}</ContentSidebaTopStyled>
+               <ContentSidebaTopStyled isBannerVisible={props.isBannerVisible}>
+                    {props.children}
+               </ContentSidebaTopStyled>
           </ContentSidebarStyled>
      );
 };

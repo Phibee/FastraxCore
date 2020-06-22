@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import '../../sass/variables.scss';
-import ImageResources from '../../assets/index';
+import { ImageResources } from '../../assets';
 import {
      Block,
      Wrapper,
@@ -35,12 +35,20 @@ export const Layout: React.FC<IProps> = (props) => {
                               <NavBar />
                               <Block flex grow>
                                    <Block flex column grow>
-                                        <Banner />
+                                        {props.contentBanner && (
+                                             <Banner>
+                                                  {props.contentBanner()}
+                                             </Banner>
+                                        )}
                                         <Content>{props.children}</Content>
                                         <Footer />
                                    </Block>
                                    {props.contentSideBar && (
-                                        <ContentSidebar>
+                                        <ContentSidebar
+                                             isBannerVisible={
+                                                  !!props.contentBanner
+                                             }
+                                        >
                                              {props.contentSideBar()}
                                         </ContentSidebar>
                                    )}
