@@ -1,19 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './sass/variables.scss';
 
-import { Block, Wrapper, Aside } from './Components';
+import ImageResources from './assets/index';
+import Layout from './components/layout';
+
+const ContentSidebar: React.FC = () => (
+     <div>
+          <label htmlFor="">Content SideBar Here...</label>
+     </div>
+);
 
 function App() {
      return (
-          <Wrapper>
-               <Block flex wrap padding>
-                    <Aside></Aside>
-                    <Block grow>
-                         <label>testss</label>
-                    </Block>
-               </Block>
-          </Wrapper>
+          <Layout>
+               <div>Content Here...</div>
+          </Layout>
      );
 }
 

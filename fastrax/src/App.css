@@ -1,4 +1,4 @@
-.App {
+/* .App {
      text-align: center;
 }
 
@@ -26,6 +26,10 @@
 
 .App-link {
      color: #61dafb;
+} */
+
+#root {
+     overflow: hidden;
 }
 
 @keyframes App-logo-spin {
@@ -50,7 +54,7 @@
 }
 
 .inline-flex {
-     display: inline-flex;
+     /* display: inline-flex; */
 }
 
 .flex-row {
@@ -59,7 +63,7 @@
 
 .flex-col {
      flex-direction: column;
-     height: 100vh;
+     height: 100%;
 }
 
 .flex-grow {

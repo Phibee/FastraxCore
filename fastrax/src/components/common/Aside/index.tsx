@@ -11,6 +11,7 @@ const AsideLayout = styled.aside<IProps>`
      width: ${(props) => (props.width ? props.width + 'px' : '320px')};
      order: ${(props) => (props.position === 'right' ? 1 : 0)};
      display: inline-flex;
+     flex-direction: column;
 `;
 
 export const Index: React.FC<IProps> = (props) => {
