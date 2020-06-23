@@ -7,9 +7,24 @@ interface IProps {}
 const NavBarStyled = styled.div<IProps>`
      flex-grow: 0;
      flex-shrink: 0;
-     min-height: 40px;
-     padding: 8px 10px;
+     height: 45px;
+     padding: 0 10px;
      background: #4e4e4e;
+
+     ul.inline-list {
+          display: block;
+     }
+     ul.inline-list li {
+          display: inline-block;
+     }
+     ul.inline-list li a {
+          display: block;
+          padding: 11px 15px;
+     }
+     ul.inline-list li a > i {
+          color: #ffffff;
+          vertical-align: middle;
+     }
 `;
 
 export const Index: React.FC<IProps> = (props) => {

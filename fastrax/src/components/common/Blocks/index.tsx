@@ -17,9 +17,13 @@ interface IProps {
      padding?: Boolean;
 }
 
-export const Index: React.FC<IProps> = (props) => {
+const BlockStyled = styled.div``;
+
+export const Index: React.FC<IProps & React.HTMLAttributes<HTMLDivElement>> = (
+     props,
+) => {
      return (
-          <div
+          <BlockStyled
                className={classNames({
                     flex: props.flex,
                     'inline-flex': !props.flex,
@@ -37,7 +41,7 @@ export const Index: React.FC<IProps> = (props) => {
                })}
           >
                {props.children}
-          </div>
+          </BlockStyled>
      );
 };
 

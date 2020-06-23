@@ -42,7 +42,10 @@ export const Index: React.FC<IProps> = (props) => {
      return (
           <BannerHeaderWrapperStyled>
                <BannerHeaderTitleStyled>
-                    <img src={ImageResources.FsxSquareThumb} width={10} />
+                    <img
+                         src={ImageResources.FsxSquareThumb}
+                         style={{ width: 12, marginRight: 5 }}
+                    />
                     {props.title}
                </BannerHeaderTitleStyled>
                <BannerHeaderSubTitleStyled>

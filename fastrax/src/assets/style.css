@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?5z1cd1');
-  src:  url('fonts/icomoon.eot?5z1cd1#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?5z1cd1') format('truetype'),
-    url('fonts/icomoon.woff?5z1cd1') format('woff'),
-    url('fonts/icomoon.svg?5z1cd1#icomoon') format('svg');
+  font-family: 'ams-icons';
+  src:  url('fonts/ams-icons.eot?fo8kqc');
+  src:  url('fonts/ams-icons.eot?fo8kqc#iefix') format('embedded-opentype'),
+    url('fonts/ams-icons.ttf?fo8kqc') format('truetype'),
+    url('fonts/ams-icons.woff?fo8kqc') format('woff'),
+    url('fonts/ams-icons.svg?fo8kqc#ams-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="ams-"], [class*=" ams-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'ams-icons' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,90 +25,57 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-right:before {
+.ams-check:before {
   content: "\e900";
 }
-.icon-arrow-left:before {
+.ams-cog:before {
   content: "\e901";
 }
-.icon-arrow-down:before {
+.ams-cross:before {
   content: "\e902";
 }
-.icon-arrow-up:before {
+.ams-dashboard:before {
   content: "\e903";
 }
-.icon-lock:before {
+.ams-excel:before {
   content: "\e904";
 }
-.icon-email:before {
+.ams-horizontal-ellipse:before {
   content: "\e905";
 }
-.icon-database-setting:before {
+.ams-list:before {
   content: "\e906";
 }
-.icon-database:before {
-  content: "\e908";
-}
-.icon-user-details:before {
+.ams-notification:before {
   content: "\e907";
 }
-.icon-user:before {
+.ams-pdf:before {
+  content: "\e908";
+}
+.ams-report:before {
   content: "\e909";
 }
-.icon-users:before {
+.ams-search:before {
   content: "\e90a";
 }
-.icon-user-id:before {
-  content: "\e91c";
-}
-.icon-dashboard:before {
+.ams-signin:before {
   content: "\e90b";
 }
-.icon-asset:before {
+.ams-signout:before {
   content: "\e90c";
 }
-.icon-asset-hire:before {
+.ams-stocks:before {
   content: "\e90d";
 }
-.icon-maintenance:before {
+.ams-toggle-list:before {
   content: "\e90e";
 }
-.icon-stocks:before {
+.ams-truck:before {
   content: "\e90f";
 }
-.icon-sales:before {
+.ams-vertical-ellipse:before {
   content: "\e910";
 }
-.icon-server:before {
+.ams-word:before {
   content: "\e911";
-}
-.icon-reports:before {
-  content: "\e912";
-}
-.icon-setting:before {
-  content: "\e913";
-}
-.icon-settings:before {
-  content: "\e914";
-}
-.icon-finance:before {
-  content: "\e915";
-}
-.icon-fastrax-trademark:before {
-  content: "\e916";
-}
-.icon-sign-out:before {
-  content: "\e917";
-}
-.icon-bell:before {
-  content: "\e918";
-}
-.icon-circular-action:before {
-  content: "\e919";
-}
-.icon-list:before {
-  content: "\e91a";
-}
-.icon-sidebar-toggle:before {
-  content: "\e91b";
 }

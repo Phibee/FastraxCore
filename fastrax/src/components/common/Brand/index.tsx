@@ -9,8 +9,8 @@ interface IProps {
 const BrandStyle = styled.div<IProps>`
      flex-grow: 0;
      flex-shrink: 0;
-     max-height: 40px;
      padding: 8px 10px;
+     height: 77px;
 `;
 
 const ImageStyle = styled.img`

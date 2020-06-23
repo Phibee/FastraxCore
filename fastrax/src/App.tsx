@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './sass/variables.scss';
+import './assets/style.css';
 
 import Layout from './components/layout';
 import { BannerHeader } from './components/common';

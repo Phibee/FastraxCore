@@ -27,12 +27,67 @@ export const Layout: React.FC<IProps> = (props) => {
                <Block flex wrap>
                     <Aside>
                          <Brand logo={ImageResources.Fastrax} />
-                         <Sidebar />
-                         <SidebarExtension />
+                         <Sidebar>
+                              <ul>
+                                   <li className="nav_title">Navigation</li>
+                                   <li>
+                                        <a className="active" href="#">
+                                             <i className="ams-dashboard"></i>
+                                             <span>Dashboard</span>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="#">
+                                             <i className="ams-truck"></i>
+                                             <span>Asset Management</span>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="#">
+                                             <i className="ams-stocks"></i>
+                                             <span>Stock Inventory</span>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </Sidebar>
+                         <SidebarExtension>
+                              <ul>
+                                   <li>
+                                        <a href="#">
+                                             <i className="ams-toggle-list"></i>
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="#">
+                                             <i className="ams-cog"></i>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </SidebarExtension>
                     </Aside>
                     <Block grow>
                          <Block flex column>
-                              <NavBar />
+                              <NavBar>
+                                   <Block flex grow>
+                                        <Block grow>
+                                             <label>dfdf</label>
+                                        </Block>
+                                        <Block>
+                                             <ul className="inline-list">
+                                                  <li>
+                                                       <a href="#">
+                                                            <i className="ams-notification"></i>
+                                                       </a>
+                                                  </li>
+                                                  <li>
+                                                       <a href="#">
+                                                            <i className="ams-signout"></i>
+                                                       </a>
+                                                  </li>
+                                             </ul>
+                                        </Block>
+                                   </Block>
+                              </NavBar>
                               <Block flex grow>
                                    <Block flex column grow>
                                         {props.contentBanner && (
