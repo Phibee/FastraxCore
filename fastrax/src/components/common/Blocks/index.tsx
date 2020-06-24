@@ -24,6 +24,7 @@ export const Index: React.FC<IProps & React.HTMLAttributes<HTMLDivElement>> = (
 ) => {
      return (
           <BlockStyled
+               //    {...props}
                className={classNames({
                     flex: props.flex,
                     'inline-flex': !props.flex,

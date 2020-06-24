@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { cloneElement } from 'react';
 import '../../App.css';
 import '../../sass/variables.scss';
 import { ImageResources } from '../../assets';
@@ -15,38 +15,60 @@ import {
      Banner,
      ContentSidebar,
 } from '../common';
+import { Link } from 'react-router-dom';
 
 interface IProps {
-     contentBanner?: any;
-     contentSideBar?: any;
+     //  contentBanner?: any;
+     //  contentSideBar?: any;
 }
 
 export const Layout: React.FC<IProps> = (props) => {
+     const findAndLoadElement = (
+          element: React.ReactNode,
+          elementProps?: Object,
+     ) => {
+          const childElement = React.Children.toArray(props.children).find(
+               (child: any) => child?.type === element,
+          );
+
+          if (React.isValidElement(childElement) && elementProps) {
+               return cloneElement(childElement, elementProps);
+          }
+
+          return childElement;
+     };
+
+     React.Children.forEach(props.children, (child: any) => {
+          if (
+               child?.type != Banner &&
+               child?.type != ContentSidebar &&
+               child?.type != Content
+          ) {
+               throw new Error(
+                    '<Layout /> accepts only child element like <Banner /> | <Content /> | <ContentSidebar />',
+               );
+          }
+     });
+
      return (
           <Wrapper>
-               <Block flex wrap>
+               <Block flex wrap className="wewew">
                     <Aside>
                          <Brand logo={ImageResources.Fastrax} />
                          <Sidebar>
                               <ul>
                                    <li className="nav_title">Navigation</li>
                                    <li>
-                                        <a className="active" href="#">
+                                        <Link to="/">
                                              <i className="ams-dashboard"></i>
                                              <span>Dashboard</span>
-                                        </a>
+                                        </Link>
                                    </li>
                                    <li>
-                                        <a href="#">
-                                             <i className="ams-truck"></i>
-                                             <span>Asset Management</span>
-                                        </a>
-                                   </li>
-                                   <li>
-                                        <a href="#">
+                                        <Link to="/about">
                                              <i className="ams-stocks"></i>
-                                             <span>Stock Inventory</span>
-                                        </a>
+                                             <span>About</span>
+                                        </Link>
                                    </li>
                               </ul>
                          </Sidebar>
@@ -69,9 +91,7 @@ export const Layout: React.FC<IProps> = (props) => {
                          <Block flex column>
                               <NavBar>
                                    <Block flex grow>
-                                        <Block grow>
-                                             <label>dfdf</label>
-                                        </Block>
+                                        <Block grow></Block>
                                         <Block>
                                              <ul className="inline-list">
                                                   <li>
@@ -90,23 +110,16 @@ export const Layout: React.FC<IProps> = (props) => {
                               </NavBar>
                               <Block flex grow>
                                    <Block flex column grow>
-                                        {props.contentBanner && (
-                                             <Banner>
-                                                  {props.contentBanner()}
-                                             </Banner>
-                                        )}
-                                        <Content>{props.children}</Content>
+                                        {findAndLoadElement(Banner)}
+                                        {findAndLoadElement(Content)}
+
                                         <Footer />
                                    </Block>
-                                   {props.contentSideBar && (
-                                        <ContentSidebar
-                                             isBannerVisible={
-                                                  !!props.contentBanner
-                                             }
-                                        >
-                                             {props.contentSideBar()}
-                                        </ContentSidebar>
-                                   )}
+                                   {findAndLoadElement(ContentSidebar, {
+                                        isBannerVisible: findAndLoadElement(
+                                             Banner,
+                                        ),
+                                   })}
                               </Block>
                          </Block>
                     </Block>

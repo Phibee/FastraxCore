@@ -26,6 +26,7 @@ const BannerHeaderSubTitleStyled = styled.h5<IProps>`
 const BannerHeaderWrapperStyled = styled.div<IProps>`
      display: inline-block;
      position: relative;
+     min-height: 39px;
      &:after {
           content: '';
           position: absolute;

@@ -35,3 +35,114 @@ $primary: #394e6c;
 @import '~@progress/kendo-theme-default/scss/forms/_index';
 @import '~@progress/kendo-theme-default/scss/checkbox/_index';
 @import '~@progress/kendo-theme-default/scss/common/_index';
+
+body.radial-open {
+     svg.radial-menu-svg {
+          transform: scale(1);
+          transition: transform 0.12s ease 0.2s;
+     }
+     .ellipsis {
+          &.radial-bottom-right-aligned {
+               bottom: 23%;
+               right: 11%;
+               opacity: 0;
+          }
+          &.radial-bottom-left-aligned {
+               bottom: 23%;
+               left: 11%;
+               opacity: 0;
+          }
+     }
+}
+
+body:not(.radial-open) {
+     .ellipsis {
+          transition-delay: 0.2s;
+     }
+     svg.radial-menu-svg {
+          transform: scale(0);
+          transition: transform 0.3s ease;
+     }
+}
+
+svg.radial-menu-svg {
+     z-index: 2;
+     position: absolute;
+     &.radial-bottom-right-aligned {
+          bottom: 10%;
+          right: 5%;
+     }
+     &.radial-bottom-left-aligned {
+          bottom: 10%;
+          left: 5%;
+     }
+
+     & text,
+     & text tspan {
+          font-family: 'ams-icons' !important;
+     }
+     & path.slicepath {
+          transition: fill 2s ease-out;
+     }
+     & > g > g:hover path.slicepath {
+          fill: #a7d1f5 !important;
+          transition: fill 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+     }
+     & g.pie__slice__group:hover,
+     & g.inner__center__group:hover {
+          cursor: pointer;
+     }
+     & > g > g.pie__slice__group:hover text {
+          fill: #333333;
+     }
+}
+
+a.ellipsis {
+     position: absolute;
+     z-index: 1;
+     width: 50px;
+     height: 50px;
+     border-radius: 100%;
+     background: #ffffff;
+     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.44);
+     opacity: 1;
+
+     &:active,
+     &:hover {
+          box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.44);
+     }
+
+     &.radial-bottom-right-aligned {
+          bottom: 20px;
+          right: 20px;
+          -webkit-transition: right 0.3s ease-in-out, bottom 0.3s ease-in-out,
+               opacity 0.35s ease-in-out;
+          transition: right 0.3s ease-in-out, bottom 0.3s ease-in-out,
+               opacity 0.35s ease-in-out;
+     }
+
+     &.radial-bottom-left-aligned {
+          bottom: 20px;
+          left: 20px;
+          -webkit-transition: left 0.3s ease-in-out, bottom 0.3s ease-in-out,
+               opacity 0.35s ease-in-out;
+          transition: left 0.3s ease-in-out, bottom 0.3s ease-in-out,
+               opacity 0.35s ease-in-out;
+     }
+
+     i {
+          color: #333333;
+          font-size: 24px;
+          padding: 14px 5px;
+          display: block;
+          text-align: center;
+     }
+}
+
+.btn-border {
+     border-radius: 5px;
+}
+
+.btn-shadow {
+     box-shadow: 0 8px 15px -6px #efefef;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 interface IProps {
-     isBannerVisible?: true | false;
+     isBannerVisible?: boolean;
 }
 
 const ContentSidebaTopStyled = styled.div<IProps>`
