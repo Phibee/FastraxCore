@@ -31,12 +31,17 @@ const SidebarStyled = styled.div<IProps>`
 
      ul li a > i {
           margin-right: 8px;
+          color: ${(props) => props.theme.color.accent} !important;
      }
 
      ul li a > i,
      ul li a > span {
           display: inline-block;
           vertical-align: middle;
+     }
+
+     ul li a > span {
+          color: ${(props) => props.theme.color.primary} !important;
      }
 `;
 

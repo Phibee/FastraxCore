@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button } from '@progress/kendo-react-buttons';
+import invert from 'invert-color';
 
 interface IProps {}
 
@@ -9,7 +10,7 @@ const SidebarExtensionLayout = styled.div<IProps>`
      flex-grow: 0;
      flex-shrink: 0;
      height: 43px;
-     background: #4e4e4e;
+     background: ${(props) => props.theme.bgColor.primary};
      border-top-right-radius: 50px;
      ul {
           display: flex;
@@ -28,7 +29,7 @@ const SidebarExtensionLayout = styled.div<IProps>`
           padding: 0 15px;
      }
      ul li a > i {
-          color: #ffffff;
+          color: ${(props) => invert(props.theme.color.primary)};
           vertical-align: middle;
      }
 `;

@@ -1,6 +1,8 @@
 import React, { HTMLAttributes, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Waves, { ElementSelector } from 'node-waves';
+import invert from 'invert-color';
+
 const classNames = require('classnames');
 
 export interface IButtonProps {
@@ -18,8 +20,8 @@ const ButtonLayout = styled.button<IButtonProps>`
      text-align: center;
      font-weight: normal;
      border: none;
-     background: #394e6d;
-     color: #fff;
+     background: ${(props) => props.theme.color.secondary};
+     color: ${(props) => invert(props.theme.color.primary)};
      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 `;
 
@@ -29,7 +31,6 @@ export const Index: React.FC<
      const btnRef = useRef<HTMLButtonElement>(null);
      useEffect(() => {
           Waves.attach(btnRef.current as ElementSelector, [
-               'waves-button',
                'waves-float',
                'waves-light',
           ]);
@@ -41,7 +42,7 @@ export const Index: React.FC<
                ref={btnRef}
                {...props}
                className={classNames({
-                    'btn-border': props.border,
+                    'btn-rounded': props.border,
                     'btn-shadow': props.shadow,
                })}
           >

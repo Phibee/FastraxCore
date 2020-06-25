@@ -10,6 +10,8 @@ const WrapperLayout = styled.div`
      padding: 0;
      display: flex;
      flex-direction: column;
+     background: ${(props) => props.theme.bgColor.secondary};
+     position: relative;
 `;
 
 export const Index: React.FC = (props) => {

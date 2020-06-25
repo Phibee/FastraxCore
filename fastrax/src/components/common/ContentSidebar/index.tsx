@@ -6,7 +6,7 @@ interface IProps {
 }
 
 const ContentSidebaTopStyled = styled.div<IProps>`
-     background: white;
+     background: ${(props) => props.theme.bgColor.secondary};
      min-height: 100%;
      ${(props) =>
           props.isBannerVisible ? 'border-top-left-radius: 25px' : ''};
@@ -16,7 +16,7 @@ const ContentSidebaTopStyled = styled.div<IProps>`
 
 const ContentSidebarStyled = styled.div<IProps>`
      width: 250px;
-     background: #4e4e4e;
+     background: ${(props) => props.theme.bgColor.primary};
 `;
 
 export const Index: React.FC<IProps> = (props) => {

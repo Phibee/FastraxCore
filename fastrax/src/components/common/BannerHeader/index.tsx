@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ImageResources } from '../../../assets';
+import invert from 'invert-color';
 
 interface IProps {
      title?: String;
@@ -11,7 +12,7 @@ const BannerHeaderTitleStyled = styled.h1<IProps>`
      margin: 0;
      padding: 0;
      font-size: 14pt;
-     color: #fff;
+     color: ${(props) => invert(props.theme.color.primary)};
 `;
 
 const BannerHeaderSubTitleStyled = styled.h5<IProps>`
@@ -20,7 +21,7 @@ const BannerHeaderSubTitleStyled = styled.h5<IProps>`
      font-size: 10pt;
      font-weight: 300;
      margin-top: 4px;
-     color: #fff;
+     color: ${(props) => invert(props.theme.color.primary)};
 `;
 
 const BannerHeaderWrapperStyled = styled.div<IProps>`

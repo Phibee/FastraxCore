@@ -7,9 +7,12 @@ import {
      BannerHeader,
      ContentSidebar,
      Button,
+     Alert,
 } from '../components/common';
 
 export interface DashboardRouteProps {}
+
+const { Toast } = Alert;
 
 const DashboardRoute: React.FC<DashboardRouteProps> = () => {
      return (
@@ -21,9 +24,13 @@ const DashboardRoute: React.FC<DashboardRouteProps> = () => {
                     />
                </Banner>
                <Content>
-                    <Button border shadow>
-                         Test
-                    </Button>
+                    <Toast
+                         position="top-left"
+                         isVisible={true}
+                         title="System Message"
+                         message="You have successfully saved."
+                         type="danger"
+                    />
                </Content>
                <ContentSidebar></ContentSidebar>
           </Layout>
