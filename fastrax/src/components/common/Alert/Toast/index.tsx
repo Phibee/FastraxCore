@@ -1,6 +1,8 @@
 import React, { HTMLAttributes, useEffect, useState, useRef } from 'react';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import invert from 'invert-color';
+import { motion, AnimationProps, MotionProps } from 'framer-motion';
+import ReactDOM from 'react-dom';
 const color = require('color');
 const classNames = require('classnames');
 
@@ -10,9 +12,10 @@ export interface IToastAlertProps {
      message: string;
      isVisible?: boolean;
      position?: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
+     onClose?: () => void;
 }
 
-const ToastStyled = styled.div<IToastAlertProps>`
+const ToastStyled = motion.custom(styled.div<IToastAlertProps>`
      position: fixed;
      z-index: 1000;
      display: ${(props) => (props.isVisible ? 'flex' : 'none')};
@@ -54,7 +57,7 @@ const ToastStyled = styled.div<IToastAlertProps>`
           bottom: 20px !important;
           right: 20px !important;
      }
-`;
+`);
 
 const ToastTitleStyled = styled.div`
      font-size: 12pt;
@@ -93,42 +96,140 @@ const ToastIconStyled = styled.i<IToastAlertProps>`
      }
 `;
 
-export const Index: React.FC<
-     IToastAlertProps & HTMLAttributes<HTMLDivElement>
-> = (props) => {
-     const toastRef = useRef<HTMLDivElement>(null);
-     const handleClose = () => toastRef.current?.remove();
+interface ComponentWithStaticMethod<IToastAlertProps>
+     extends React.FC<IToastAlertProps> {
+     showAlert: (value: string) => void;
+}
 
-     return (
-          <ToastStyled
-               ref={toastRef}
-               {...props}
-               className={classNames({
-                    'top-left': props.position == 'top-left',
-                    'top-right':
-                         props.position == 'top-right' || !props.position,
-                    'bottom-left': props.position == 'bottom-left',
-                    'bottom-right': props.position == 'bottom-right',
-               })}
-          >
-               {props.type && (
-                    <ToastIconStyled
-                         {...props}
-                         className="ams-check"
-                    ></ToastIconStyled>
-               )}
-               <span
-                    className="toast-close ams-cross"
-                    onClick={handleClose}
-               ></span>
-               <div className="toast__body__wrapper">
-                    {props.title && (
-                         <ToastTitleStyled>{props.title}</ToastTitleStyled>
+class Index extends React.Component<
+     IToastAlertProps & HTMLAttributes<HTMLDivElement> & MotionProps
+> {
+     constructor(props: IToastAlertProps) {
+          super(props);
+     }
+
+     static defaultProps: IToastAlertProps = {
+          isVisible: false,
+          message: '',
+     };
+
+     toastRef = useRef<HTMLDivElement>(null);
+     handleClose = () => {
+          this.toastRef.current?.remove();
+          this.props.onClose && this.props.onClose();
+     };
+     variants = {
+          hidden: { opacity: 0, y: -50 },
+          visible: { opacity: 1, y: 0 },
+     };
+
+     static showALert = (message: string) => {};
+
+     render() {
+          return (
+               <ToastStyled
+                    ref={this.toastRef}
+                    initial="hidden"
+                    animate="visible"
+                    variants={this.variants}
+                    transition={{ delay: 0.5 }}
+                    {...this.props}
+                    className={classNames({
+                         'top-left': this.props.position == 'top-left',
+                         'top-right':
+                              this.props.position == 'top-right' ||
+                              !this.props.position,
+                         'bottom-left': this.props.position == 'bottom-left',
+                         'bottom-right': this.props.position == 'bottom-right',
+                    })}
+               >
+                    {this.props.type && (
+                         <ToastIconStyled
+                              {...this.props}
+                              className="ams-check"
+                         ></ToastIconStyled>
                     )}
-                    <ToastMessageStyled>{props.message}</ToastMessageStyled>
-               </div>
-          </ToastStyled>
-     );
-};
+                    <span
+                         className="toast-close ams-cross"
+                         onClick={this.handleClose}
+                    ></span>
+                    <div className="toast__body__wrapper">
+                         {this.props.title && (
+                              <ToastTitleStyled>
+                                   {this.props.title}
+                              </ToastTitleStyled>
+                         )}
+                         <ToastMessageStyled>
+                              {this.props.message}
+                         </ToastMessageStyled>
+                    </div>
+               </ToastStyled>
+          );
+     }
+}
+
+// export const Index: ComponentWithStaticMethod<
+//      IToastAlertProps & HTMLAttributes<HTMLDivElement> & MotionProps
+// > = (props) => {
+//      const toastRef = useRef<HTMLDivElement>(null);
+//      const handleClose = () => {
+//           toastRef.current?.remove();
+//           props.onClose && props.onClose();
+//      };
+
+//      const variants = {
+//           hidden: { opacity: 0, y: -50 },
+//           visible: { opacity: 1, y: 0 },
+//      };
+
+//      return (
+//           <ToastStyled
+//                ref={toastRef}
+//                initial="hidden"
+//                animate="visible"
+//                variants={variants}
+//                transition={{ delay: 0.5 }}
+//                {...props}
+//                className={classNames({
+//                     'top-left': props.position == 'top-left',
+//                     'top-right':
+//                          props.position == 'top-right' || !props.position,
+//                     'bottom-left': props.position == 'bottom-left',
+//                     'bottom-right': props.position == 'bottom-right',
+//                })}
+//           >
+//                {props.type && (
+//                     <ToastIconStyled
+//                          {...props}
+//                          className="ams-check"
+//                     ></ToastIconStyled>
+//                )}
+//                <span
+//                     className="toast-close ams-cross"
+//                     onClick={handleClose}
+//                ></span>
+//                <div className="toast__body__wrapper">
+//                     {props.title && (
+//                          <ToastTitleStyled>{props.title}</ToastTitleStyled>
+//                     )}
+//                     <ToastMessageStyled>{props.message}</ToastMessageStyled>
+//                </div>
+//           </ToastStyled>
+//      );
+// };
+
+// Index.showAlert = (value: string): void => {
+//      ReactDOM.render()
+//      // ReactDOM.render(
+//      //      <Index
+//      //           position="top-left"
+//      //           isVisible={true}
+//      //           title="System Message"
+//      //           message="You have successfully saved."
+//      //           type="danger"
+//      //      />,
+//      //      document.querySelector('body'),
+//      // );
+// };
 
 export default Index;

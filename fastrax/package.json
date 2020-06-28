@@ -39,6 +39,7 @@
           "react-ripples": "^2.2.1",
           "react-router-dom": "^5.2.0",
           "react-scripts": "3.4.1",
+          "react-spring": "^8.0.27",
           "sass-loader": "^8.0.2",
           "save-dev": "^0.0.1-security",
           "styled-components": "^5.1.1",
