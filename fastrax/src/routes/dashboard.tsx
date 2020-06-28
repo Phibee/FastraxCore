@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 import Layout from '../components/layout';
 
 import {
@@ -8,6 +8,8 @@ import {
      ContentSidebar,
      Button,
      Alert,
+     RadialMenu,
+     Input
 } from '../components/common';
 
 export interface DashboardRouteProps {}
@@ -15,7 +17,6 @@ export interface DashboardRouteProps {}
 const { Toast } = Alert;
 
 const DashboardRoute: React.FC<DashboardRouteProps> = () => {
-     const [isVisible, setIsVisible] = useState(false);
      return (
           <Layout>
                <Banner>
@@ -25,17 +26,22 @@ const DashboardRoute: React.FC<DashboardRouteProps> = () => {
                     />
                </Banner>
                <Content>
-                    <button
-                         onClick={() => {
-                              setIsVisible(!isVisible);
-                              Toast.showALert('wew');
-                         }}
-                    >
-                         Show
-                    </button>
-                    <button onClick={() => setIsVisible(!isVisible)}>
-                         Hide
-                    </button>
+                    <Input
+                         shadow
+                         rounded
+                         placeholder="Asset ID"
+                         value="test"
+                         icon
+                         iconName="ams-notification"
+                         type="password"
+                    />
+                    <Toast
+                         isVisible={true}
+                         title="System Message"
+                         message="Successfully saved"
+                         type="success"
+                         position="top-left"
+                    />
                </Content>
                <ContentSidebar></ContentSidebar>
           </Layout>

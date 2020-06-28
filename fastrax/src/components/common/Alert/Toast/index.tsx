@@ -104,23 +104,24 @@ interface ComponentWithStaticMethod<IToastAlertProps>
 class Index extends React.Component<
      IToastAlertProps & HTMLAttributes<HTMLDivElement> & MotionProps
 > {
+     private toastRef = React.createRef<HTMLDivElement>();
+
      constructor(props: IToastAlertProps) {
           super(props);
      }
 
      static defaultProps: IToastAlertProps = {
           isVisible: false,
-          message: '',
+          message: ''
      };
 
-     toastRef = useRef<HTMLDivElement>(null);
      handleClose = () => {
           this.toastRef.current?.remove();
           this.props.onClose && this.props.onClose();
      };
      variants = {
           hidden: { opacity: 0, y: -50 },
-          visible: { opacity: 1, y: 0 },
+          visible: { opacity: 1, y: 0 }
      };
 
      static showALert = (message: string) => {};
@@ -140,7 +141,7 @@ class Index extends React.Component<
                               this.props.position == 'top-right' ||
                               !this.props.position,
                          'bottom-left': this.props.position == 'bottom-left',
-                         'bottom-right': this.props.position == 'bottom-right',
+                         'bottom-right': this.props.position == 'bottom-right'
                     })}
                >
                     {this.props.type && (
