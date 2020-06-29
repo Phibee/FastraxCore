@@ -18,7 +18,7 @@ export interface IInputProps {
      icon?: boolean;
      iconName?: string;
      iconColor?: string;
-     type?: 'text' | 'password' | 'number';
+     type?: 'text' | 'password' | 'number' | 'email';
 }
 
 const IconStyled = styled.i<IInputProps>`
@@ -111,10 +111,12 @@ export const Index: React.FC<
                     onChange={props.onChange || handleOnChange}
                     value={inputVal === '' ? props.value : inputVal}
                />
-               <ShowPassIconStyled
-                    className="ams-notification"
-                    onClick={handleShowPassword}
-               />
+               {type === 'password' && (
+                    <ShowPassIconStyled
+                         className="ams-notification"
+                         onClick={handleShowPassword}
+                    />
+               )}
           </InputWrapperStyled>
      );
 };
