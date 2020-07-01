@@ -32,39 +32,39 @@ const IconStyled = styled.i<IInputProps>`
 
 const ShowPassIconStyled = styled.i<IInputProps>`
      position: absolute;
+     cursor: pointer;
      right: 12px;
      top: 13px;
      font-weight: 100;
      font-size: 13px;
+     &:hover {
+          color: #8e8e8e;
+     }
      color: ${(props) => (props.iconColor ? props.iconColor : '#cacaca')};
 `;
 
 const LabelStyled = styled.label`
      position: absolute;
      left: 12px;
-     top: -8px;
+     top: -7px;
      background: #fff;
      padding: 0 4px;
-     font-size: 9pt;
+     font-size: 8pt;
      font-family: 'Poppins';
      font-weight: 300;
 `;
 
 const InputStyled = styled.input<IInputProps>`
-     border: 1px solid #ced4da;
+     border: 1px solid rgba(0, 0, 0, 0.08);
      outline: none;
-     padding: 9px 16px 9px ${(props) => (props.icon ? '33' : '16')}px !important;
+     padding: 7px 16px 7px ${(props) => (props.icon ? '33' : '16')}px !important;
      line-height: 1.5;
      font-size: 10pt;
      width: 100%;
      font-weight: 300;
-     ${(props) =>
-          props.type === 'password' &&
-          ` font-family: Verdana, sans-serif;
-            letter-spacing: 0.02rem;
-          `}
 
      &:focus {
+          border-color: rgba(0, 0, 0, 0.15);
           box-shadow: 0 10px 17px -14px #999ea08a !important;
      }
 `;
@@ -82,17 +82,24 @@ export const Index: React.FC<
 > = ({ placeholder, type, ...props }) => {
      const [inputVal, setInputVal] = useState('');
      const inputRef = useRef<HTMLInputElement>(null);
+     const iconRef = useRef<HTMLElement>(null);
      const handleShowPassword = () => {
           const _type = inputRef.current?.getAttribute('type');
-          inputRef.current?.setAttribute(
-               'type',
-               _type === 'password' ? 'text' : 'password'
-          );
+          const isPass = _type === 'password';
+          inputRef.current?.setAttribute('type', isPass ? 'text' : 'password');
+          iconRef.current?.classList.add('pulse');
      };
      const handleOnChange = (e: React.FormEvent<HTMLInputElement>) => {
           const { value } = e.currentTarget;
           setInputVal(value);
      };
+
+     useEffect(() => {
+          const animated = document.querySelector('.animated__icon');
+          animated?.addEventListener('animationend', () => {
+               iconRef.current?.classList.remove('pulsate');
+          });
+     });
 
      return (
           <InputWrapperStyled>
@@ -113,7 +120,8 @@ export const Index: React.FC<
                />
                {type === 'password' && (
                     <ShowPassIconStyled
-                         className="ams-notification"
+                         ref={iconRef}
+                         className="animated__icon ams-notification"
                          onClick={handleShowPassword}
                     />
                )}

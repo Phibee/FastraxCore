@@ -12,11 +12,13 @@ const ContentSidebaTopStyled = styled.div<IProps>`
           props.isBannerVisible ? 'border-top-left-radius: 25px' : ''};
      padding-top: 10px;
      padding-left: 15px;
+     flex-shrink: 0;
 `;
 
 const ContentSidebarStyled = styled.div<IProps>`
      width: 250px;
      background: ${(props) => props.theme.bgColor.primary};
+     flex-shrink: 0;
 `;
 
 export const Index: React.FC<IProps> = (props) => {

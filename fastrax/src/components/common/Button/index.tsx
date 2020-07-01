@@ -2,6 +2,7 @@ import React, { HTMLAttributes, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Waves, { ElementSelector } from 'node-waves';
 import invert from 'invert-color';
+import { ProtectHOC } from '../../../hoc';
 const color = require('color');
 const classNames = require('classnames');
 
@@ -69,4 +70,4 @@ export const Index: React.FC<
      );
 };
 
-export default Index;
+export default ProtectHOC({}, Index);

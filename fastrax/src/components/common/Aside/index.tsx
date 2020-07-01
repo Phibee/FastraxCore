@@ -17,6 +17,7 @@ const AsideLayout = styled.aside<IProps>`
      display: inline-flex;
      flex-direction: column;
      box-shadow: 3px 0 13px -3px ${(props) => color(invert(props.theme.bgColor.secondary)).alpha(0.1)};
+     flex-shrink: 0;
 `;
 
 export const Index: React.FC<IProps> = (props) => {

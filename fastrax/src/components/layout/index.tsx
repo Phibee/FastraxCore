@@ -1,6 +1,5 @@
 import React, { cloneElement, useState } from 'react';
 import '../../App.css';
-import '../../sass/variables.scss';
 import { ImageResources } from '../../assets';
 // import Ripples from 'react-ripples';
 import { Ripple } from '@progress/kendo-react-ripple';
@@ -17,7 +16,7 @@ import {
      Footer,
      Content,
      Banner,
-     ContentSidebar,
+     ContentSidebar
 } from '../common';
 import { Link } from 'react-router-dom';
 import { getTheme } from '../../theme/getTheme';
@@ -30,10 +29,10 @@ interface IProps {
 export const Layout: React.FC<IProps> = (props) => {
      const findAndLoadElement = (
           element: React.ReactNode,
-          elementProps?: Object,
+          elementProps?: Object
      ) => {
           const childElement = React.Children.toArray(props.children).find(
-               (child: any) => child?.type === element,
+               (child: any) => child?.type === element
           );
 
           if (React.isValidElement(childElement) && elementProps) {
@@ -50,7 +49,7 @@ export const Layout: React.FC<IProps> = (props) => {
                child?.type != Content
           ) {
                throw new Error(
-                    '<Layout /> accepts only child element like <Banner /> | <Content /> | <ContentSidebar />',
+                    '<Layout /> accepts only child element like <Banner /> | <Content /> | <ContentSidebar />'
                );
           }
      });
@@ -60,7 +59,7 @@ export const Layout: React.FC<IProps> = (props) => {
      return (
           <ThemeProvider theme={getTheme(themeName)}>
                <Wrapper>
-                    <Block flex wrapFlex className="wewew">
+                    <Block flex>
                          <Aside>
                               <Brand logo={ImageResources.Fastrax} />
                               <Sidebar>
@@ -109,7 +108,7 @@ export const Layout: React.FC<IProps> = (props) => {
                                                                  href="#"
                                                                  onClick={() =>
                                                                       setThemeName(
-                                                                           'dark',
+                                                                           'dark'
                                                                       )
                                                                  }
                                                             >
@@ -121,7 +120,7 @@ export const Layout: React.FC<IProps> = (props) => {
                                                                  href="#"
                                                                  onClick={() =>
                                                                       setThemeName(
-                                                                           'light',
+                                                                           'light'
                                                                       )
                                                                  }
                                                             >
@@ -141,8 +140,8 @@ export const Layout: React.FC<IProps> = (props) => {
                                         </Block>
                                         {findAndLoadElement(ContentSidebar, {
                                              isBannerVisible: findAndLoadElement(
-                                                  Banner,
-                                             ),
+                                                  Banner
+                                             )
                                         })}
                                    </Block>
                               </Block>
