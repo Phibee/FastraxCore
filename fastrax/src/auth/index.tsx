@@ -29,7 +29,7 @@ interface IUser {
 const hasRole = (user: IUser, roles: string[]) =>
      roles.some((role) => user.roles.includes(role));
 
-const hasPermission = (user: IUser, permissions: string | string[]) =>
+export const hasPermission = (user: IUser, permissions: string | string[]) =>
      user.permissions.some((permission) =>
           typeof permissions === 'string'
                ? permission === permissions
@@ -46,8 +46,8 @@ const AuthRoute = ({ component, ...rest }: Props) => {
 
      // check if route is restricted by role
      const isHasRole = hasRole(currentUser, rest.roles);
-     const canDelete = hasPermission(currentUser, 'canDelete');
-     console.log({ canDelete });
+     //  const canDelete = hasPermission(currentUser, 'canDelete');
+     //  console.log({ canDelete });
 
      return (
           <Route

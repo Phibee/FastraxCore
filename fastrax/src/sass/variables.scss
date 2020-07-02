@@ -421,7 +421,8 @@ table > tbody > tr.hovered_state td {
 
 .k-pager-nav span,
 .k-pager-numbers .k-state-selected,
-.k-pager-numbers .k-link {
+.k-pager-numbers .k-link,
+.k-pager-nav {
      padding: 1px;
      border-radius: 50%;
 }
@@ -462,7 +463,8 @@ table > tbody > tr.hovered_state td {
 }
 
 .k-pager-numbers .k-link:not(.k-state-selected):hover,
-.k-pager-nav:hover {
+.k-pager-nav:not(.k-state-selected):hover,
+.k-pager-nav:not(.k-state-selected):focus {
      background-color: #f7f7f7 !important;
      border-color: #f7f7f7 !important;
      box-shadow: none;
@@ -833,7 +835,7 @@ td.k-state-focused.k-state-selected {
      position: relative;
      overflow: visible;
 }
-.k-master-row:hover td:after {
+.k-master-row:hover td:not(.k-group-cell):after {
      content: '';
      position: absolute;
      height: 2px;
@@ -858,4 +860,29 @@ td.k-state-focused.k-state-selected {
      border-color: $primary;
      box-shadow: 0 10px 13px -8px lighten($primary, 10%);
      user-select: none;
+}
+
+.k-item {
+     background: #fff;
+     border: none;
+}
+
+.k-filter-menu-container {
+     padding-top: 0 !important;
+}
+
+.k-grid .k-grouping-row .k-icon {
+     outline: none !important;
+
+     &:before {
+          color: #969a9f;
+     }
+}
+
+.k-grid .k-grouping-row + tr td {
+     border-top: none;
+}
+
+.k-animation-container .k-item.k-state-selected {
+     background-color: $primary !important;
 }

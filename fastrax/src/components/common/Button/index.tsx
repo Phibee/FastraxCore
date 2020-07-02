@@ -2,7 +2,6 @@ import React, { HTMLAttributes, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Waves, { ElementSelector } from 'node-waves';
 import invert from 'invert-color';
-import { ProtectHOC } from '../../../hoc';
 const color = require('color');
 const classNames = require('classnames');
 
@@ -25,20 +24,29 @@ const ButtonLayout = styled.button<IButtonProps>`
      background: ${(props) => props.theme.color.secondary};
      color: ${(props) => invert(props.theme.color.primary)};
      transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-     ${(props) =>
-          props.shadow &&
-          `box-shadow: 0 8px 15px -8px ${color(
-               props.theme.color.secondary
-          ).lighten(0.5)};`}
-     &:hover {
+     &:not(:disabled) {
           ${(props) =>
                props.shadow &&
-               `box-shadow: 0 8px 21px -5px ${color(
+               `box-shadow: 0 8px 15px -9px ${color(
                     props.theme.color.secondary
-               ).lighten(0.7)};`}
+               ).lighten(0.5)};`}
+     }
+
+     &:not(:disabled):hover {
+          ${(props) =>
+               props.shadow &&
+               `box-shadow: 0 8px 21px -7px ${color(
+                    props.theme.color.secondary
+               ).lighten(0.1)};`}
      }
      & > i {
           color: ${(props) => invert(props.theme.color.primary)};
+     }
+     &:disabled {
+          cursor: default;
+          background: #f7f7f7;
+          color: #cecece;
+          opacity: 0.8;
      }
 `;
 
@@ -48,10 +56,7 @@ export const Index: React.FC<
      const btnRef = useRef<HTMLButtonElement>(null);
      useEffect(() => {
           if (props.ripple) {
-               Waves.attach(btnRef.current as ElementSelector, [
-                    'waves-float',
-                    'waves-light'
-               ]);
+               Waves.attach(btnRef.current as ElementSelector, ['waves-light']);
                Waves.init();
           }
      }, []);
@@ -70,4 +75,4 @@ export const Index: React.FC<
      );
 };
 
-export default ProtectHOC({}, Index);
+export default Index;

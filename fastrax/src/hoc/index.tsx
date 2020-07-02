@@ -1,1 +1,1 @@
-export { default as ProtectHOC } from './protect';
+export * from './protect';

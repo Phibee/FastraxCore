@@ -72,7 +72,7 @@ const InputStyled = styled.input<IInputProps>`
 const InputWrapperStyled = styled.div`
      position: relative;
      display: flex;
-     margin-top: 7px;
+     margin-top: 9px;
 `;
 
 export const Index: React.FC<
