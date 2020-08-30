@@ -14,7 +14,7 @@ export interface IButtonProps {
 
 const ButtonLayout = styled.button<IButtonProps>`
      outline: none;
-     padding: 0.85em 1.8em 0.85em;
+     padding: 0.75em 1.8em 0.75em;
      display: inline-block;
      outline: none;
      cursor: pointer;

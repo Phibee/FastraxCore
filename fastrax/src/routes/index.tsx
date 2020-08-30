@@ -20,12 +20,13 @@ const Routes: React.FC<RoutesProps> = () => {
      return (
           <Router>
                <Switch>
-                    <AuthRoute
+                    {/* <AuthRoute
                          exact
                          path="/"
                          component={DashboardRoute}
                          roles={UserRoles.all}
-                    />
+                    /> */}
+                    <Route path="/" component={DashboardRoute} />
                     <Route path="/about" component={AboutRoute} />
                     <Route path="/login" component={LoginRoute} />
                </Switch>

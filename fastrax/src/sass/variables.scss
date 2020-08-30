@@ -886,3 +886,9 @@ td.k-state-focused.k-state-selected {
 .k-animation-container .k-item.k-state-selected {
      background-color: $primary !important;
 }
+
+.k-grid .k-grid-header th.k-header,
+.k-grid .k-grid-header th.k-header > .k-link,
+.k-grid .k-grid-header th.k-with-icon .k-link {
+     background: #424344;
+}

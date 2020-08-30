@@ -1468,10 +1468,10 @@
     "@progress/kendo-react-popup" "3.14.0"
     prop-types "^15.6.0"
 
-"@progress/kendo-react-intl@^3.14.0":
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-intl/-/kendo-react-intl-3.14.0.tgz#e5ebc7532a60a4366dd97884a31ee233d366cada"
-  integrity sha512-tF+UlLnrwuzuFIQvPlvkIX5ltUsIL/RJmHqk3VkIISKRFO/TpFIgrtJRIhSq9nKe4kKxc+nB/oV7bGGLabKCYg==
+"@progress/kendo-react-intl@^3.16.0":
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-intl/-/kendo-react-intl-3.16.0.tgz#db2fef521d0cba49d467ad2f1ab9e6db88c1df8c"
+  integrity sha512-STFnP7jNdF66eiENc9FazXFKELu84kwvgSYPAQp6pfto9ourU9kc54M5wh02/HAW3FPUwAYFm5SOB3GZRFXNsg==
   dependencies:
     "@telerik/kendo-intl" "^2.1.0"
     prop-types "^15.6.0"
@@ -1688,6 +1688,11 @@
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-7.2.1.tgz#2ad4e844175a3738cb9e7064be5ea070b8863a1c"
   integrity sha512-oZ0Ib5I4Z2pUEcoo95cT1cr6slco9WY7yiPpG+RGNkj8YcYgJnM7pXmYmorNOReh8MIGcKSqXyeGjxnr8YiZbA==
+
+"@types/animejs@^3.1.2":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@types/animejs/-/animejs-3.1.2.tgz#93289a902b0b9bfac3020d29413139dcca6acdbc"
+  integrity sha512-GyyuoztWbZMErx9brJQChvvfeMd5vplWU/H6BYVl7JUcLoMaDOVxlqF3d4ypB7TzXnbgnMSykGmjAVVRsvhHhQ==
 
 "@types/babel__core@^7.1.0":
   version "7.1.9"
@@ -1978,6 +1983,11 @@
   dependencies:
     "@types/react" "*"
     hoist-non-react-statics "^3.3.0"
+
+"@types/inputmask@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@types/inputmask/-/inputmask-4.0.1.tgz#c58d6a6f4c511d491a49d4ed889fa02ea670e4c7"
+  integrity sha512-d05er00IwTq5IiNy0muGohQwbxiH/utEDRo10D54V+b94kf5FsmI34yc8j1PBmqLbu4Nb1+zJyRuhHd/fzBPKQ==
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.3"
@@ -2452,6 +2462,11 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
+
+animejs@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/animejs/-/animejs-3.2.0.tgz#2daea7365983249022cc454fa726acdb4a84345d"
+  integrity sha512-zhtGl5cS0G2f5DfciMO8uwWpnx06nfFnHlXYYXHBazHep1Lyd6kEtBQP+9hpYKE0dBZjIigHp9VpMO95ZfXQJQ==
 
 ansi-colors@^3.0.0:
   version "3.2.4"
@@ -6334,6 +6349,11 @@ ini@^1.3.5:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
   integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+
+inputmask@^5.0.5:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/inputmask/-/inputmask-5.0.5.tgz#93af99c35fc108d590e9bbd3ec6cc9b9a2e7c2ed"
+  integrity sha512-9gqau4tb0oaxYiymLC43KU/aAXHVofya7ilGIxqKONbSh7LNKRHmpw6mhuH2D4yykRlcNhS9zI/FOsrAQmltQA==
 
 inquirer@7.0.4:
   version "7.0.4"

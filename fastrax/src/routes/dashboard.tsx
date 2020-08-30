@@ -22,12 +22,14 @@ import {
      RadialMenu,
      Input,
      Checkbox,
-     Radio
+     Radio,
+     CurrencyInput
 } from '../components/common';
 import products from '../json/products.json';
 import { withAuth } from '../hoc/protect';
 
 import { process, filterBy } from '@progress/kendo-data-query';
+const anime = require('animejs').default;
 
 export interface DashboardRouteProps {}
 
@@ -42,6 +44,8 @@ export interface KGridProps {
 
 const DashboardRoute: React.FC<DashboardRouteProps> = () => {
      const [isValue, setIsValue] = useState<any>(true);
+
+     const [currencyNewVal, setcurrencyNewVal] = useState<any>('');
 
      //  const handleChange = (
      //       e: React.FormEvent<HTMLInputElement>,
@@ -104,6 +108,14 @@ const DashboardRoute: React.FC<DashboardRouteProps> = () => {
 
      useEffect(() => {
           console.log(gridRef.current);
+
+          setTimeout(() => {
+               anime({
+                    targets: '.k-grid-table .k-master-row',
+                    translateY: [30, 0],
+                    delay: anime.stagger(100) // increase delay by 100ms for each elements.
+               });
+          }, 100);
           return () => {};
      }, []);
 
@@ -116,19 +128,18 @@ const DashboardRoute: React.FC<DashboardRouteProps> = () => {
                     />
                </Banner>
                <Content>
+                    {/* <div style={{ maxWidth: 200 }}>
+                         <CurrencyInput
+                              rate={3.67}
+                              value={55}
+                              digits={4}
+                              currencyCode="AED"
+                              afterConvertedOrFormatted={setcurrencyNewVal}
+                         />
+                    </div>
                     <Button ripple permission="canDelete" rounded shadow>
                          Button
                     </Button>
-                    {/* <Input
-                         shadow
-                         rounded
-                         placeholder="Asset ID"
-                         type="password"
-                         //  onChange={(e: React.FormEvent<HTMLInputElement>) =>
-                         //       handleChange(e, setIsValue)
-                         //  }
-                    /> */}
-                    {/* <input type="checkbox" /> */}
                     <div>Checkbox</div>
                     <Checkbox
                          text="Checkbox 1"
@@ -144,8 +155,7 @@ const DashboardRoute: React.FC<DashboardRouteProps> = () => {
                          defaultValue={new Date()}
                          format="dd/MMM/yyyy"
                          weekNumber={true}
-                    />
-                    <div>Grid</div>
+                    /> */}
                     <Grid
                          ref={gridRef}
                          style={{ height: '400px' }}
